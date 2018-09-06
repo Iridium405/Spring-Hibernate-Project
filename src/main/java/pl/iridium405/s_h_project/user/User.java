@@ -8,12 +8,9 @@ import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.format.annotation.DateTimeFormat;
-import pl.iridium405.s_h_project.conversation.Conversation;
-import pl.iridium405.s_h_project.tweet.Tweet;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -32,15 +29,14 @@ public class User {
     @Column(nullable = false, unique = true, name = "username")
     private String username;
 
-    @NotBlank
     @Length(min = 6)
     @Column(name = "password")
     private String password;
 
-    @Column(name = "firstName")
+    @Column(name = "firstname")
     private String firstName;
 
-    @Column(name = "lastName")
+    @Column(name = "lastname")
     private String lastName;
 
     @Column(name = "birth")
@@ -52,13 +48,12 @@ public class User {
     @Column(nullable = false, unique = true, name = "email")
     private String email;
 
-    @Column(name = "tweets")
-    private List<Tweet> tweets;
 
-    @Column(name = "conversations")
-    private List<Conversation> conversations;
+//    @Column(name = "conversations")
+//    @OneToMany
+//    private List<Conversation> conversations;
 
-    @Column(name = "friends")
-    private List<User> friends;
+//    @Column(name = "friends")
+//    private List<User> friends;
 
 }

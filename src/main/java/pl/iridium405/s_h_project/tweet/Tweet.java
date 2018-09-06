@@ -6,9 +6,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotBlank;
+import org.springframework.format.annotation.DateTimeFormat;
 import pl.iridium405.s_h_project.user.User;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -22,11 +24,16 @@ public class Tweet {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
+
     @Length(min = 10, max = 200)
     private String content;
 
-    @NotBlank
+
+    @DateTimeFormat(pattern = "dd-MM-yyyy")
+    private LocalDateTime published;
+
+
+    @ManyToOne(targetEntity = User.class)
     private User user;
 
 }
