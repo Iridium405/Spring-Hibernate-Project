@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotBlank;
 import pl.iridium405.s_h_project.user.User;
 
@@ -22,6 +23,7 @@ public class Tweet {
     private Long id;
 
     @NotBlank
+    @Length(min = 10, max = 200)
     private String content;
 
     @NotBlank
