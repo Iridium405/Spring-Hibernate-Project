@@ -1,4 +1,4 @@
-package pl.iridium405.s_h_project;
+package pl.iridium405.twitter_like;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

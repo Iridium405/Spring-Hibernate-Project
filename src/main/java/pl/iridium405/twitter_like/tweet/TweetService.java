@@ -1,4 +1,4 @@
-package pl.iridium405.s_h_project.tweet;
+package pl.iridium405.twitter_like.tweet;
 
 public interface TweetService {
 }

@@ -1,4 +1,4 @@
-package pl.iridium405.s_h_project.user;
+package pl.iridium405.twitter_like.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

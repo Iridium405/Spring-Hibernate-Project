@@ -1,13 +1,12 @@
-package pl.iridium405.s_h_project.tweet;
+package pl.iridium405.twitter_like.tweet;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Length;
-import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.format.annotation.DateTimeFormat;
-import pl.iridium405.s_h_project.user.User;
+import pl.iridium405.twitter_like.user.User;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
