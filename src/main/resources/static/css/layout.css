@@ -1,0 +1,15 @@
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    /*background-color: navy;*/
+    /*font-size: 30px;*/
+    /*height: 200px;*/
+}
+
+.blox {
+    font-size: 30px;
+    background-color: navy;
+    color: yellow;
+}
