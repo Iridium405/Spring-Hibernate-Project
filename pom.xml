@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pl.iridium405</groupId>
-    <artifactId>s_h_project</artifactId>
+    <artifactId>twitter_like</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>s_h_project</name>
+    <name>twitter_like</name>
     <description>Twitter-like Spring Boot Project</description>
 
     <parent>

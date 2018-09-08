@@ -9,6 +9,10 @@
 }
 
 .blox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
     background-color: navy;
     color: yellow;
