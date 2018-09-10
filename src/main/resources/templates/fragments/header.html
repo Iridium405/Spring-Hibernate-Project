@@ -9,40 +9,44 @@
 <body>
 <div th:fragment="header">
 
+
     <div th:class="main-header">
-        <div th:class="manage-button-left">
-            <a th:href="@{/}"><i class="fas fa-home"></i></a>
-        </div>
 
-        <div th:class="manage-button-left">
-            <a th:href="@{/conversations}"><i class="far fa-comments"></i></a>
-        </div>
+        <div th:class="nav-buttons-left">
+            <div th:class="manage-button-left">
+                <a th:href="@{/}"><i class="fas fa-home"></i></a>
+            </div>
 
-        <div th:class="manage-button-inside-left">
-            <a th:href="@{/new-tweet}"><i class="fas fa-plus-circle"></i></a>
-        </div>
+            <div th:class="manage-button-left">
+                <a th:href="@{/conversations}"><i class="far fa-comments"></i></a>
+            </div>
 
+            <div th:class="manage-button-inside-left">
+                <a th:href="@{/new-tweet}"><i class="fas fa-plus-circle"></i></a>
+            </div>
+        </div>
 
         <div th:class="form-container">
-
             <input th:type="text" placeholder="Search users...">
             <button th:class="search-button" th:type="submit"><i class="fas fa-search"></i></button>
-
         </div>
 
-        <div th:class="manage-button-inside-right">
-            <a th:href="@{/calendar}"><i class="far fa-calendar-alt"></i></a>
+        <div th:class="nav-buttons-right">
+            <div th:class="manage-button-inside-right">
+                <a th:href="@{/calendar}"><i class="far fa-calendar-alt"></i></a>
+            </div>
+
+            <div th:class="manage-button-right">
+                <a th:href="@{/properties}"><i class="fas fa-user-circle"></i></a>
+            </div>
+
+            <div th:class="manage-button-right">
+                <a th:href="@{/#}"><i class="fas fa-sign-out-alt"></i></a>
+            </div>
         </div>
 
-        <div th:class="manage-button-right">
-            <a th:href="@{/properties}"><i class="fas fa-user-circle"></i></a>
-        </div>
-
-        <div th:class="manage-button-right">
-            <a th:href="@{/#}"><i class="fas fa-sign-out-alt"></i></a>
-        </div>
     </div>
-
 </div>
+
 </body>
 </html>
