@@ -1,4 +1,7 @@
 /*-------------------- HEADER --------------------*/
+body {
+    background-color: rgb(156,187,243);
+}
 
 .main-header {
     margin: -5% 10%;
@@ -6,7 +9,7 @@
     flex: 1;
     justify-content: center;
     align-items: center;
-    background-color: navy;
+    background-color: rgb(70,75,86);
     width: 80%;
     height: 70px;
     position: fixed;
@@ -26,7 +29,6 @@
 .form-container input{
     display: flex;
     flex: 1;
-
     font-size: 30px;
     border: 2px solid white;
     border-radius: 10px;
@@ -46,23 +48,15 @@
     flex: 1;
     justify-content: right;
     align-items: center;
-    flex-basis: fit-content;
+    margin-right: 2%;
 }
 
 .manage-button-left {
     color: honeydew;
     font-size: 35px;
-    margin-right: 3%;
-    flex-basis: fit-content;
-}
-
-.manage-button-inside-left {
-    color: honeydew;
-    font-size: 35px;
     margin-right: 5%;
-    flex-basis: fit-content;
+    justify-content: right;
 }
-
 
 
 
@@ -71,23 +65,15 @@
 .nav-buttons-right {
     display: flex;
     flex: 1;
-    flex-basis: fit-content;
     justify-content: left;
     align-items: center;
+    margin-left: 2%;
 }
 
 .manage-button-right {
     color: honeydew;
     font-size: 35px;
-    margin-left: 3%;
-    flex-basis: fit-content;
-}
-
-.manage-button-inside-right {
-    color: honeydew;
-    font-size: 35px;
     margin-left: 5%;
-    flex-basis: fit-content;
 }
 
 a {
@@ -102,9 +88,9 @@ a :hover {
 
 .main-background {
     height: 2000px;
-    margin: 6% 25% 0 25%;
-    background-color: honeydew;
-    border: 2px solid honeydew;
+    margin: 6% 25% 1% 25%;
+    background-color: rgba(70,75,86, .5) ;
+    border: 3px solid rgb(70,75,86);
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -115,11 +101,10 @@ a :hover {
 .main-content {
     width: 90%;
     height: 300px;
-    border: 1px solid black;
-    background-color: red;
+    border: 3px solid rgb(70,75,86);
+    background-color: rgba(240,255,240, 1);
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
