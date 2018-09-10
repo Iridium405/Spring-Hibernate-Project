@@ -7,7 +7,35 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
 
     @GetMapping("/")
-    private String home(){
+    private String homePage(){
         return "home";
     }
+
+    @GetMapping("/conversations")
+    private String conversationsPage() {
+        return "conversations";
+    }
+
+    @GetMapping("/new-tweet")
+    private String newTweetPage(){
+        return "new-tweet-like";
+    }
+
+    @GetMapping("/watching")
+    private String watchingPage() {
+        return "watching";
+    }
+
+    @GetMapping("/calendar")
+    private String calendarPage() {
+        return "calendar";
+    }
+
+
+    @GetMapping("/properties")
+    private String propertiesPage() {
+        return "properties";
+    }
+
+
 }

@@ -49,9 +49,9 @@ public class User {
     private String email;
 
 
-//    @Column(name = "conversations")
+//    @Column(name = "conversation")
 //    @OneToMany
-//    private List<Conversation> conversations;
+//    private List<Conversation> conversation;
 
 //    @Column(name = "friends")
 //    private List<User> friends;
