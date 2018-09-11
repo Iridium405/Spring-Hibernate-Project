@@ -10,9 +10,10 @@
     <div th:class="ntl-background">
         <div th:class="ntl-content">
             <div>
-                ---------------------------------
-                NEW POST
-                ---------------------------------
+                <form	th:action="@{/new-tweet/add}"	th:object="${tweet}"	method="post">
+                    <p>Title <input	type="text"	th:field="*{content}"	/></p>
+                    <p><input	type="submit"	value="Submit"	/></p>
+                </form>
             </div>
         </div>
     </div>

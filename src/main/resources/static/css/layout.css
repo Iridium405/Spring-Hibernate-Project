@@ -1,7 +1,8 @@
+
 /*-------------------- HEADER --------------------*/
 body {
-    /*background-color: rgb(240,244,252); /* - niebieskawy */
-    background-color: rgb(172,252,93); /* - jasnozielony */
+    background-color: rgb(240,244,252); /* - niebieskawy */
+    /*background-color: rgb(172,252,93); /* - jasnozielony */
 }
 
 .main-header {
@@ -17,6 +18,9 @@ body {
     border: 3px solid honeydew;
     flex-flow: row wrap;
 }
+
+
+
 
 /*---SEARCH---*/
 
@@ -78,7 +82,6 @@ body {
 
 
 
-
 .nav-buttons-right {
     display: flex;
     flex: 1;
@@ -98,17 +101,15 @@ a {
 }
 
 a :hover {
-    /*color: rgb(100,149,237);*/
-    color: rgb(124,182,66);
+    color: rgb(100,149,237);
+    /*color: rgb(99,146,53);*/
 }
 
-.tooltip {
-    visibility: hidden;
-}
 
-.tooltip:hover {
-    visibility: visible;
-}
+
+
+
+
 
 /*--------------------MAIN PAGE--------------------*/
 
