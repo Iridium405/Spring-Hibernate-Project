@@ -24,7 +24,7 @@ public class Tweet {
     private Long id;
 
 
-    @Length(min = 10, max = 200)
+    @Length(min = 10, max = 250)
     private String content;
 
 
