@@ -30,10 +30,14 @@
             </div>
         </div>
 
+
+
         <div th:class="form-container">
-            <input th:type="text" placeholder="Search users...">
+            <input th:type="search" placeholder="Search users...">
             <button th:class="search-button" th:type="submit"><i class="fas fa-search"></i></button>
         </div>
+
+
 
         <div th:class="nav-buttons-right">
             <div th:class="manage-button-right">
@@ -41,11 +45,15 @@
             </div>
 
             <div th:class="manage-button-right">
-                <a th:href="@{/properties}"><i class="fas fa-user-circle"></i></a>
+                <a th:href="@{/my-account}"><i class="fas fa-user-circle"></i></a>
             </div>
 
             <div th:class="manage-button-right">
-                <a th:href="@{/#}"><i class="fas fa-sign-out-alt"></i></a>
+                <a th:href="@{/settings}"><i class="fas fa-wrench"></i></a>
+            </div>
+
+            <div th:class="manage-button-right">
+                <a th:href="@{/logout}"><i class="fas fa-sign-out-alt"></i></a>
             </div>
         </div>
 

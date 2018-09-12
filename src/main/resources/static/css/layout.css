@@ -56,7 +56,8 @@ body {
 }
 
 .search-button:hover {
-    color: yellow;
+    color: rgb(99,146,53);
+    /*color: rgb(100,149,237);*/
 }
 
 
@@ -93,7 +94,7 @@ body {
 .manage-button-right {
     color: honeydew;
     font-size: 35px;
-    margin-left: 8%;
+    margin-left: 6%;
 }
 
 a {

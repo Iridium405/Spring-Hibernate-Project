@@ -8,12 +8,26 @@
 
 
     <div th:class="ntl-background">
-        <div th:class="ntl-content">
-            <div>
-                <form	th:action="@{/new-tweet/add}"	th:object="${tweet}"	method="post">
-                    <p>Title <input	type="text"	th:field="*{content}"	/></p>
-                    <p><input	type="submit"	value="Submit"	/></p>
-                </form>
+        <div th:class="ntl-inside">
+
+            <div th:class="ntl-username" th:text="${user.username}">User_Login</div>
+        </div>
+
+        <div th:class="ntl-inside">
+            <div th:class="ntl-content">
+                <div>
+
+                    <form th:action="@{/new-tweet}" th:object="${tweet}" method="post">
+                        <div th:class="ntl-post-header">Content:</div>
+                        <div><textarea minlength="10" maxlength="250" th:class="ntl-post" th:type="text"
+                                       th:field="*{content}"></textarea></div>
+
+                        <div th:class="ntl-submit">
+                            <button th:class="ntl-submit-button" th:type="submit"><i
+                                    class="fas fa-arrow-alt-circle-right"></i></button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
