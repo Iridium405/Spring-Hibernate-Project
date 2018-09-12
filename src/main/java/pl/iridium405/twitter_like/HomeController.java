@@ -16,11 +16,6 @@ public class HomeController {
         return "conversations";
     }
 
-    @GetMapping("/new-tweet")
-    private String newTweetPage(){
-        return "new-tweet-like";
-    }
-
     @GetMapping("/watching")
     private String watchingPage() {
         return "watching";
@@ -31,11 +26,19 @@ public class HomeController {
         return "calendar";
     }
 
-
-    @GetMapping("/properties")
-    private String propertiesPage() {
-        return "properties";
+    @GetMapping("/my-account")
+    private String myAccountPage() {
+        return "my-account";
     }
 
+    @GetMapping("/settings")
+    private String propertiesPage() {
+        return "settings";
+    }
+
+    @GetMapping("/logout")
+    private String logoutPage() {
+        return "logout";
+    }
 
 }
