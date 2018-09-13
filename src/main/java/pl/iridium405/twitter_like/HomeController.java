@@ -26,10 +26,7 @@ public class HomeController {
         return "calendar";
     }
 
-    @GetMapping("/my-account")
-    private String myAccountPage() {
-        return "my-account";
-    }
+
 
     @GetMapping("/settings")
     private String propertiesPage() {

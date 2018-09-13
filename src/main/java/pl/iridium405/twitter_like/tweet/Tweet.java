@@ -31,6 +31,9 @@ public class Tweet {
     @DateTimeFormat(pattern = "dd-MM-yyyy")
     private LocalDateTime published;
 
+    @Column(name = "published_string")
+    private String publishedString;
+
 
     @ManyToOne(targetEntity = User.class)
     private User user;

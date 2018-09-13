@@ -10,6 +10,7 @@ import pl.iridium405.twitter_like.user.User;
 import pl.iridium405.twitter_like.user.UserService;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 
 @Controller
@@ -25,9 +26,6 @@ public class TweetController {
     }
 
 
-
-
-
     @GetMapping("/new-tweet")
     private String newTweetGet(Model model) {
         User user = userService.getById(1L);
@@ -39,7 +37,12 @@ public class TweetController {
 
     @PostMapping("/new-tweet")
     private String addTweetPost(@ModelAttribute Tweet tweet) {
-        tweet.setPublished(LocalDateTime.now());
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        String formattedNow = now.format(formatter);
+
+        tweet.setPublished(now);
+        tweet.setPublishedString(formattedNow);
         tweet.setUser(userService.getById(1L));
         tweetService.save(tweet);
         return "home";
