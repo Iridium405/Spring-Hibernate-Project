@@ -7,14 +7,19 @@
 <section layout:fragment="content">
 
 
-    <div th:class="universal-background">
-        <div th:class="ntl-content">
+    <div th:class="main-background">
+
+
+        <div th:class="main-content" th:each="tweet : ${userTweets}">
             <div>
-                ---------------------------------
-                MY ACCOUNT
-                ---------------------------------
+
+                <p th:text="${tweet.publishedString}"></p>
+                <p th:text="${tweet.content}"></p>
+
             </div>
         </div>
+
+
     </div>
 
 

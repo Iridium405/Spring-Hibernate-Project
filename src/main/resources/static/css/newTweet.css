@@ -1,5 +1,4 @@
 .ntl-background {
-
     border: 3px solid rgb(70,75,86);
     height: 700px;
     margin: 6% 25% 1% 25%;
@@ -12,20 +11,12 @@
     align-items: center;
 }
 
-.ntl-publisher {
-    display: flex;
-    align-items: start;
-    justify-content: left;
-    margin-left: 2%;
-}
-
 .ntl-username {
     display: flex;
     align-items: center;
     justify-content: left;
     margin: 3%;
     font-size: 35px;
-
     color: rgb(70,75,86);
 }
 
