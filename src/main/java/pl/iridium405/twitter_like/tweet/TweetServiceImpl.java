@@ -36,7 +36,7 @@ public class TweetServiceImpl implements TweetService {
 
     @Override
     public List<Tweet> getAllByUserId(Long id) {
-        return tweetRepository.findAllByUser_Id(id);
+        return tweetRepository.findAllByUser_IdOrderByPublishedDesc(id);
     }
 
     @Override

@@ -31,7 +31,7 @@ public class Tweet {
     @DateTimeFormat(pattern = "dd-MM-yyyy")
     private LocalDateTime published;
 
-    @Column(name = "published_string")
+    @Column(name = "publishedstring")
     private String publishedString;
 
 

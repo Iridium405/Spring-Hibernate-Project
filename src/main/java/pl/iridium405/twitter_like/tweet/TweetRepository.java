@@ -25,4 +25,6 @@ public interface TweetRepository extends JpaRepository<Tweet, Long> {
 
     List<Tweet> findAllByUser_IdAndPublishedBetween(Long id, LocalDateTime start, LocalDateTime stop);
 
+    List<Tweet> findAllByUser_IdOrderByPublishedDesc(Long id);
+
 }
