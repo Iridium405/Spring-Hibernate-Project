@@ -1,0 +1,80 @@
+.myacc-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(70,75,86);
+    height: auto;
+    margin: 6% 25% 1% 25%;
+    background-color: rgba(70,75,86, .5);
+}
+
+.myacc-content {
+    width: 90%;
+    height: 450px;
+    border: 3px solid rgb(70,75,86);
+    background-color: rgba(240,255,240, 1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.myacc-inside-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 2em;
+    background-color: rgb(70,75,86);
+    color: honeydew;
+    margin: 2% 5% 2%;
+}
+
+.myacc-inside-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 90%;
+    background-color: rgb(70,75,86);
+    margin: 1% 0 1%;
+    height: 3em;
+}
+
+.myacc-inside-bottom {
+    width: 90%;
+    height: 250px;
+    margin-top: 2%;
+    border: 2px solid rgb(70,75,86);
+    word-wrap: break-word;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.myacc-username {
+    margin-right: 20%;
+    font-weight: bold;
+}
+
+.myacc-published {
+    margin-left: 20%;
+    font-weight: bold;
+}
+
+.myacc-text {
+    margin: 2%;
+    font-size: 25px;
+}
+
+.myacc-edit-button {
+    font-size: 30px;
+    margin-right: 3%;
+}
+
+.myacc-delete-button {
+    font-size: 30px;
+    margin-right: 5%;
+}
