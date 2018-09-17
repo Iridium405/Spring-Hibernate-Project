@@ -7,16 +7,38 @@
 <section layout:fragment="content">
 
 
-    <div th:class="main-background">
+    <div th:class="myacc-background">
 
 
-        <div th:class="main-content" th:each="tweet : ${userTweets}">
-            <div>
+        <div th:class="myacc-content" th:each="tweet : ${userTweets}">
+            <div th:class="myacc-inside-top">
+                    <div th:class="myacc-username" th:text="${tweet.user.username}"></div>
 
-                <p th:text="${tweet.publishedString}"></p>
-                <p th:text="${tweet.content}"></p>
+                    <div th:class="myacc-published" th:text="${tweet.publishedString}"></div>
 
             </div>
+
+            <div th:class="myacc-inside-middle">
+
+                <div th:class="myacc-edit-button">
+                    <a th:href="@{#}"><i class="fas fa-edit"></i></a>
+                </div>
+
+                <div th:class="myacc-delete-button">
+                    <a th:href="@{#}"><i class="fas fa-trash-alt"></i></a>
+                </div>
+
+            </div>
+
+            <div th:class="myacc-inside-bottom">
+
+                    <div th:class="myacc-text" th:text="${tweet.content}"></div>
+
+            </div>
+
+
+
+
         </div>
 
 
