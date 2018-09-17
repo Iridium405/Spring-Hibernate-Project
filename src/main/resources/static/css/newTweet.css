@@ -23,7 +23,7 @@
 .ntl-content {
     width: 90%;
     height: 500px;
-    border: 3px solid rgb(70,75,86);
+    /*border: 3px solid rgb(70,75,86);*/
     background-color: rgba(240,255,240, 1);
     display: flex;
     justify-content: center;
@@ -39,9 +39,13 @@
 }
 
 .ntl-post {
-    height: 200px;
+    height: 250px;
     width: 700px;
+    resize: none;
+    font-family: "Lucida Console", Monaco, monospace;
     font-size: 25px;
+    border: 2px solid rgb(70,75,86);
+    padding: 1%;
 }
 
 .ntl-submit {
@@ -53,7 +57,7 @@
 
 .ntl-submit-button {
     background-color: rgba( 0, 0, 0, 0 );
-    color: rgb(99,146,53);
+    color: rgb(70,75,86);
     border: none;
     font-size: 40px;
     cursor: pointer;
