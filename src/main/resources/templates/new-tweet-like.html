@@ -18,7 +18,7 @@
 
                     <form th:action="@{/new-tweet}" th:object="${tweet}" method="post">
                         <div th:class="ntl-post-header">Content:</div>
-                        <div><textarea minlength="10" maxlength="250" th:class="ntl-post" th:type="text"
+                        <div><textarea minlength="10" maxlength="280" th:class="ntl-post" th:type="text"
                                        th:field="*{content}" placeholder="What's on your mind?"></textarea></div>
 
                         <div th:class="ntl-submit">

@@ -27,11 +27,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 95%;
     height: 2em;
-    background-color: rgb(70,75,86);
+    background-color: rgb(100,149,237);
     color: honeydew;
-    margin: 2% 5% 2%;
+    margin: 2% 5% 1%;
 }
 
 .myacc-inside-middle {
@@ -39,34 +39,35 @@
     flex-direction: row;
     justify-content: right;
     align-items: center;
-    width: 90%;
-    background-color: rgb(70,75,86);
+    width: 95%;
+    background-color: rgb(100,149,237);
     margin: 1% 0 1%;
     height: 3em;
 }
 
 .myacc-inside-bottom {
-    width: 90%;
-    height: 250px;
+    width: 95%;
+    height: 270px;
     margin-top: 2%;
     border: 2px solid rgb(70,75,86);
     word-wrap: break-word;
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: Georgia, serif;
+    overflow-y: auto;
 }
 
 .myacc-username {
-    margin-right: 20%;
+
     font-weight: bold;
 }
 
 .myacc-published {
-    margin-left: 20%;
+    margin-left: 18em;
     font-weight: bold;
 }
 
 .myacc-text {
     margin: 2%;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .myacc-edit-button {
@@ -74,7 +75,15 @@
     margin-right: 3%;
 }
 
+.myacc-edit-button:hover {
+    color: rgb(70,75,86);
+}
+
 .myacc-delete-button {
     font-size: 30px;
     margin-right: 5%;
+}
+
+.myacc-delete-button:hover {
+    color: rgb(70,75,86);
 }
